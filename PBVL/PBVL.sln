@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2012 for Windows Desktop
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ImageProcessing", "ImageProcessing\ImageProcessing.vcxproj", "{5B3AFB45-9332-4AD6-8DF3-0ABEDD6FBFAD}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PBVLibrary", "PBVLibrary\PBVLibrary.vcxproj", "{76478DD2-7F05-4486-87E3-C276DB12B672}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5B3AFB45-9332-4AD6-8DF3-0ABEDD6FBFAD}.Debug|Win32.ActiveCfg = Debug|Win32
+		{5B3AFB45-9332-4AD6-8DF3-0ABEDD6FBFAD}.Debug|Win32.Build.0 = Debug|Win32
+		{5B3AFB45-9332-4AD6-8DF3-0ABEDD6FBFAD}.Release|Win32.ActiveCfg = Release|Win32
+		{5B3AFB45-9332-4AD6-8DF3-0ABEDD6FBFAD}.Release|Win32.Build.0 = Release|Win32
+		{76478DD2-7F05-4486-87E3-C276DB12B672}.Debug|Win32.ActiveCfg = Debug|Win32
+		{76478DD2-7F05-4486-87E3-C276DB12B672}.Debug|Win32.Build.0 = Debug|Win32
+		{76478DD2-7F05-4486-87E3-C276DB12B672}.Release|Win32.ActiveCfg = Release|Win32
+		{76478DD2-7F05-4486-87E3-C276DB12B672}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

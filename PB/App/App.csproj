@@ -1,0 +1,313 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2A0904CB-2CCE-478E-8064-3F9EC5ACBA41}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>App</RootNamespace>
+    <AssemblyName>App</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net">
+      <HintPath>..\packages\log4net.2.0.3\lib\net40-full\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="SlimDX">
+      <HintPath>..\packages\SlimDX.4.0.13.44\lib\NET40\SlimDX.dll</HintPath>
+    </Reference>
+    <Reference Include="Solid.State">
+      <HintPath>..\packages\Solid.State.1.2.0\lib\net40\Solid.State.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Configuration\AppConfiguration.cs" />
+    <Compile Include="Controllers\BaseController.cs" />
+    <Compile Include="Controllers\PrinterInfoController.cs" />
+    <Compile Include="Controllers\PrintScreenController.cs" />
+    <Compile Include="Controllers\TakePhotoController.cs" />
+    <Compile Include="Controllers\WelcomeScreenController.cs" />
+    <Compile Include="Controls\DoubleBufferedPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\IPanel.cs" />
+    <Compile Include="Controls\SlimDxPanel.cs" />
+    <Compile Include="Fsm\Context.cs" />
+    <Compile Include="Fsm\FsmImpl.cs" />
+    <Compile Include="Main\AppContext.cs" />
+    <Compile Include="Screens\BaseScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\BaseScreen.Designer.cs">
+      <DependentUpon>BaseScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Screens\ChromaKeySettingsScreenBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\ChromaKeySettingsScreenBase.Designer.cs">
+      <DependentUpon>ChromaKeySettingsScreenBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\ErrorScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\ErrorScreen.Designer.cs">
+      <DependentUpon>ErrorScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\PrinterInfoScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\PrinterInfoScreen.Designer.cs">
+      <DependentUpon>PrinterInfoScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\LiveViewSettingsScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\LiveViewSettingsScreen.Designer.cs">
+      <DependentUpon>LiveViewSettingsScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\PhotoSettingsScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\PhotoSettingsScreen.Designer.cs">
+      <DependentUpon>PhotoSettingsScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\PrintingScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\PrintingScreen.Designer.cs">
+      <DependentUpon>PrintingScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\SetBackgroundScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\SetBackgroundScreen.Designer.cs">
+      <DependentUpon>SetBackgroundScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\SetColorEfectScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\SetColorEfectScreen.Designer.cs">
+      <DependentUpon>SetColorEfectScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\SetForegroundScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\SetForegroundScreen.Designer.cs">
+      <DependentUpon>SetForegroundScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\SetEfectsScreenBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\SetEfectsScreenBase.Designer.cs">
+      <DependentUpon>SetEfectsScreenBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\SettingsScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\SettingsScreen.Designer.cs">
+      <DependentUpon>SettingsScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\TakePhotoScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\TakePhotoScreen.Designer.cs">
+      <DependentUpon>TakePhotoScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\WelcomeScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\WelcomeScreen.Designer.cs">
+      <DependentUpon>WelcomeScreen.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Screens\ChromaKeySettingsScreenBase.resx">
+      <DependentUpon>ChromaKeySettingsScreenBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\ErrorScreen.resx">
+      <DependentUpon>ErrorScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\PrinterInfoScreen.resx">
+      <DependentUpon>PrinterInfoScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\LiveViewSettingsScreen.resx">
+      <DependentUpon>LiveViewSettingsScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\PhotoSettingsScreen.resx">
+      <DependentUpon>PhotoSettingsScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\PrintingScreen.resx">
+      <DependentUpon>PrintingScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\SetBackgroundScreen.resx">
+      <DependentUpon>SetBackgroundScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\SetColorEfectScreen.resx">
+      <DependentUpon>SetColorEfectScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\SetForegroundScreen.resx">
+      <DependentUpon>SetForegroundScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\SetEfectsScreenBase.resx">
+      <DependentUpon>SetEfectsScreenBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\SettingsScreen.resx">
+      <DependentUpon>SettingsScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\TakePhotoScreen.resx">
+      <DependentUpon>TakePhotoScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\WelcomeScreen.resx">
+      <DependentUpon>WelcomeScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CameraAccessLayer\CameraAccessLayer.csproj">
+      <Project>{a42a81cc-40f9-482d-bbb5-3596f9121f40}</Project>
+      <Name>CameraAccessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EdskWrapper\EdskWrapper.csproj">
+      <Project>{d167e946-644b-4fdc-b955-0d0a525cfdca}</Project>
+      <Name>EdskWrapper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ImageProcessing\ImageProcessing.csproj">
+      <Project>{e792f7bb-16c2-47df-860d-542932da5f7d}</Project>
+      <Name>ImageProcessing</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PBVLAccessLayer\ImageProcessingAccessLayer.csproj">
+      <Project>{6c6aad3d-fad2-4ac8-8e32-5b7e722adbbd}</Project>
+      <Name>ImageProcessingAccessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PBVLWrapper\PBVLWrapper.csproj">
+      <Project>{49c1008c-352f-493b-bff7-1762a773f852}</Project>
+      <Name>PBVLWrapper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utils\Utils.csproj">
+      <Project>{22c75b4b-45de-4321-b87f-ea51f612285f}</Project>
+      <Name>Utils</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\main_screen_bg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\main_screen_bg_weedings.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\take_photo_screen_bg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\take_photo_screen_foreground.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\take_photo_screen_foreground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\take_photo_screen_bg_btn_ico.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\take_photo_screen_col_ef_btn_ico.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\take_photo_screen_fg_btn_ico.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\take_photo_screen_tak_ph_btn_ico.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\set_bg_screen_cancel_ico.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\set_bg_screen_next_ico.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\set_bg_screen_prev_ico.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\down_ico.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\up_ico.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\power_off_ico.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\accept_ico.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printing_screen_bg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print_screen_loading.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\main_screen_bg_new_year.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

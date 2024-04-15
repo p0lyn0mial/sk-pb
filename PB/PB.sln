@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2012 for Windows Desktop
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App", "App\App.csproj", "{2A0904CB-2CCE-478E-8064-3F9EC5ACBA41}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PBVLWrapper", "PBVLWrapper\PBVLWrapper.csproj", "{49C1008C-352F-493B-BFF7-1762A773F852}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CameraAccessLayer", "CameraAccessLayer\CameraAccessLayer.csproj", "{A42A81CC-40F9-482D-BBB5-3596F9121F40}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageProcessingAccessLayer", "PBVLAccessLayer\ImageProcessingAccessLayer.csproj", "{6C6AAD3D-FAD2-4AC8-8E32-5B7E722ADBBD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utils", "Utils\Utils.csproj", "{22C75B4B-45DE-4321-B87F-EA51F612285F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EdskWrapper", "EdskWrapper\EdskWrapper.csproj", "{D167E946-644B-4FDC-B955-0D0A525CFDCA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageProcessing", "ImageProcessing\ImageProcessing.csproj", "{E792F7BB-16C2-47DF-860D-542932DA5F7D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2A0904CB-2CCE-478E-8064-3F9EC5ACBA41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A0904CB-2CCE-478E-8064-3F9EC5ACBA41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A0904CB-2CCE-478E-8064-3F9EC5ACBA41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A0904CB-2CCE-478E-8064-3F9EC5ACBA41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49C1008C-352F-493B-BFF7-1762A773F852}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49C1008C-352F-493B-BFF7-1762A773F852}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49C1008C-352F-493B-BFF7-1762A773F852}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49C1008C-352F-493B-BFF7-1762A773F852}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A42A81CC-40F9-482D-BBB5-3596F9121F40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A42A81CC-40F9-482D-BBB5-3596F9121F40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A42A81CC-40F9-482D-BBB5-3596F9121F40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A42A81CC-40F9-482D-BBB5-3596F9121F40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C6AAD3D-FAD2-4AC8-8E32-5B7E722ADBBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C6AAD3D-FAD2-4AC8-8E32-5B7E722ADBBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C6AAD3D-FAD2-4AC8-8E32-5B7E722ADBBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C6AAD3D-FAD2-4AC8-8E32-5B7E722ADBBD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22C75B4B-45DE-4321-B87F-EA51F612285F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22C75B4B-45DE-4321-B87F-EA51F612285F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22C75B4B-45DE-4321-B87F-EA51F612285F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22C75B4B-45DE-4321-B87F-EA51F612285F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D167E946-644B-4FDC-B955-0D0A525CFDCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D167E946-644B-4FDC-B955-0D0A525CFDCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D167E946-644B-4FDC-B955-0D0A525CFDCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D167E946-644B-4FDC-B955-0D0A525CFDCA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E792F7BB-16C2-47DF-860D-542932DA5F7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E792F7BB-16C2-47DF-860D-542932DA5F7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E792F7BB-16C2-47DF-860D-542932DA5F7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E792F7BB-16C2-47DF-860D-542932DA5F7D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

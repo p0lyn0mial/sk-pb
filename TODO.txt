@@ -1,0 +1,8 @@
+==================
+Nice to have
+==================
+
+1. Chroma key
+2. Chroma key - in black&white colours - fg with colours
+3. All in black&white colours
+4. All in Sepia
